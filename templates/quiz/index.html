@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+
+<style>
+  .jumbotron{
+    margin-bottom: 0px;
+    background-image: url('{% static "image/index2.jpg" %}');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .styled-button {
+  background-color: black; /* Set the background color */
+  border: none; /* Remove border */
+  color: white; /* Set text color */
+  padding: 10px 20px; /* Set padding inside the button */
+  text-align: center; /* Center align text inside the button */
+  text-decoration: none; /* Remove underline from the text */
+  display: inline-block; /* Make the button behave like a block-level element */
+  font-size: 16px; /* Set the font size */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  border-radius: 5px; /* Optional: Add rounded corners */
+  
+}
+
+/* Change button style on hover */
+.styled-button:hover {
+  background-color: gold; /* Change background color on hover */
+  text-decoration: none; /* Remove underline from the text */
+}
+</style>
+<body>
+  {% include "quiz/navbar.html" %}
+<br>
+<section id="section-jumbotron" class="jumbotron jumbotron-fluid d-flex justify-content-center align-items-center">
+  <div class="container text-center">
+    <h1  style="color: rgb(6, 6, 6);; font-size: 80px;">Let's Quiz</h1>
+    <p style="color: wheat; font-size: 50px;"><strong>Test your skills and become a master.</strong></p>
+    <p  style="color: white; font-size: 50px;"><strong>We organize quizzes on various topics.</strong></p>
+
+    
+
+    <p style="color: white; font-size: 20px;"><strong>Sign up if you haven't already and get access to millions of quizzes on the topic of your interest.</strong></p>
+    <p style="color: white; font-size: 20px;"><strong> Start Your Journey Here:</strong></p>
+    <!--<a href="/student/studentsignup" class="btn btn-lg btn-info" style="padding-right: 35px;"><i class="fa fa-user-plus" aria-hidden="true"></i> Sign Up</a>-->
+    <a href="/student/studentsignup" class="styled-button" style="font-size: 20px;">Click me</a>
+    <br><br>  
+  </div>  
+</section>
+  {% include "quiz/footer.html" %}
+</body>
+
+</html>
