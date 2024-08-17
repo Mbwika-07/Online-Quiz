@@ -13,8 +13,6 @@ class TeacherUserForm(forms.ModelForm):
 
 
 
-
-
 class TeacherForm(forms.ModelForm):
     class Meta:
         model=models.Teacher
